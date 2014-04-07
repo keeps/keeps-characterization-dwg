@@ -17,6 +17,7 @@
 				<configuration>
 					<source>${java_version}</source>
 					<target>${java_version}</target>
+                                        <argLine>-Xmx1024m</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -24,7 +25,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>pt.keep.validator.DwgCharacterizationTool</mainClass>
+							<mainClass>pt.keep.validator.dwg.DwgCharacterizationTool</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

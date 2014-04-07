@@ -1,4 +1,4 @@
-package pt.keep.validator;
+package pt.keep.validator.dwg;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -22,8 +22,8 @@ import org.apache.tika.parser.dwg.DWGParser;
 import org.apache.tika.sax.BodyContentHandler;
 import org.xml.sax.ContentHandler;
 
-import pt.keep.validator.result.Result;
-import pt.keep.validator.result.ValidationInfo;
+import pt.keep.validator.dwg.result.Result;
+import pt.keep.validator.dwg.result.ValidationInfo;
 
 public class DwgCharacterizationTool 
 {
@@ -42,7 +42,7 @@ public class DwgCharacterizationTool
           jaxbMarshaller.marshal(res, bos);
           return bos.toString("UTF-8");
       } catch (Exception e) {
-        e.printStackTrace();
+        //e.printStackTrace();
       }
       return null;
   }
@@ -133,7 +133,7 @@ public class DwgCharacterizationTool
               System.out.println(toolOutput);
           }
       } catch (Exception e) {
-          e.printStackTrace();
+          //e.printStackTrace();
       }
 
   }
